@@ -10,6 +10,5 @@ dockerize:
   - docker
  script:
   - docker build . -t node_docker
-  - docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD} docker.tircher.be
   - docker tag node_docker docker.tircher.be/node_docker
   - docker push docker.tircher.be/node_docker
