@@ -9,6 +9,5 @@ dockerize:
  tags:
   - docker
  script:
-  - docker build . -t node_docker
-  - docker tag node_docker docker.tircher.be/node_docker
-  - docker push docker.tircher.be/node_docker
+  - docker build . -t docker.mytcc.be/node_docker
+  - docker push docker.mytcc.be/node_docker
