@@ -9,5 +9,5 @@ dockerize:
  tags:
   - docker
  script:
-  - docker build . -t registry:5000/node_docker
-  - docker push registry:5000/node_docker
+  - docker build . -t localhost:5005/node_docker
+  - docker push localhost:5005/node_docker
