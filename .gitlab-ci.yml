@@ -9,6 +9,5 @@ dockerize:
  tags:
   - docker
  script:
-  - DOCKER_OPTS="--insecure-registry=registry:5000"
   - docker build . -t registry:5000/node_docker
   - docker push registry:5000/node_docker
